@@ -1,0 +1,27 @@
+.swiper {
+  position: relative;
+  .slider {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    .slide {
+      min-width: 100vw;
+      height: 500px;
+      scroll-snap-align: start;
+      display: flex;;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    top: 250px;
+    &.next {
+      right: 30px;
+    }
+    &.left {
+      left: 30px;
+    }
+  }
+}
