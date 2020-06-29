@@ -1,1 +1,9 @@
-<p>consumer2 works!</p>
+<app-swiper [slides]="slides" [slidesTemplate]="mySlidesTemplate"></app-swiper>
+
+<ng-template #mySlidesTemplate let-name let-index="index" let-nav="navigation">
+  Speaker name is: {{name}}
+  <br>
+  Index: {{index}}
+  <br>
+  <button (click)="nav.next()">CLICK HERE TO MOVE NEXT</button>
+</ng-template>
